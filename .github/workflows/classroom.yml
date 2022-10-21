@@ -1,10 +1,11 @@
     name: GitHub Classroom Workflow
 
-    on:
-      workflow_dispatch:
-      push:
-        tags:
-          - checkMe*
+    on: [push]
+
+    permissions:
+    checks: write
+    actions: read
+    contents: read
 
     jobs:
       build:
